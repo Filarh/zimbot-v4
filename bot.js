@@ -33,17 +33,17 @@ global.APIKeys = {
 }
 
 //settings
-global.owner = ['27634090203',''] //owner number +27634090203
-global.wame = ['27634090203'] 
-global.pemilik = ['27634090203'] //owner number +27634090203
+global.owner = ['593962888416',''] //owner number +27634090203
+global.wame = ['593962888416'] 
+global.pemilik = ['593962888416'] //owner number +27634090203
 global.premium = ['27634090203'] //premium number +27634090203
 global.pengguna = 'Drips' //username
-global.footer = 'ZIM BOT INC'
-global.botnma = 'ZIM BOT INC' //bot name
+global.footer = 'Laurita UwU'
+global.botnma = 'Laurita UwU' //bot name
 global.botname = 'ZIM BOT V4'
-global.ownernma = 'Drips' //owner name
+global.ownernma = 'Allen' //owner name
 global.packname = 'Drips' //sticker package name
-global.author = 'By Drips Memes' //sticker author name
+global.author = 'Adaptado por Allen' //sticker author name
 global.sessionName = 'session' //session name
 global.prefa = ['#','!','/',''] //prefix
 global.sp = '🔵' //sp
@@ -73,15 +73,15 @@ global.f6 = 'application/vnd.android.package-archive'
 global.flaming = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text='
 global.mess = {
     success: 'Takaenda Done!',
-    admin: '*This feature is only for admin!*',
-    botAdmin: '*zim bot  must be admin first!*',
-    owner: '*this feature is only for zimbot owner*',
+    admin: '*Esto solo lo puede usar un admin!*',
+    botAdmin: '*El bot no tiene admin*',
+    owner: '*Solo el creador puede usar esto*',
     group: '*Feature is only for groups!*',
     grouponly: '*Group Mode Only*',
-    private: 'Features Used Only For Private Chat!',
+    private: 'No estamos en un chat privado bro ._.',
     bot: 'This feature in only for the bot number',
-    wait: '*whoa wait a moment zim bot proccessing*',
-    endLimit: '*Your daily limit has expired the limit will be reseted every 12 hours*',
+    wait: '*Dame un ratito :3*',
+    endLimit: '*Tu límite diario ha expirado y ahora tendrás que esperar 12 horas*',
     noPetualang: '*you are not in rpg database type #joinrpg* _ur name_'
 }
 global.limitawal = {
