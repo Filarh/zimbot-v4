@@ -808,7 +808,7 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
               hydratedTemplate: {
               imageMessage: message.imageMessage,
               hydratedContentText: hg,
-              hydratedFooterText: `${global.botname}`,
+              hydratedFooterText: `Mascota de Allen - Laurita`,
               mentions: [sender],
               hydratedButtons: [{        
               "urlButton": {
@@ -3134,7 +3134,7 @@ let drips = [
 { buttonId: `${command} on`, buttonText: { displayText: 'ON' }, type: 1 },
 { buttonId: `${command} off`, buttonText: { displayText: 'OFF' }, type: 1 }
 ]
-await ZimBotInc.sendButtonText(m.chat, drips, `*▊▊▊ANTILINK VIEW▊▊▊*`, `${global.botname}`, m)
+await ZimBotInc.sendButtonText(m.chat, drips, `*▊▊▊ANTILINK VIEW▊▊▊*`, `Mascota de Allen - Laurita`, m)
 }
 break
 case 'antitiktok': case 'aantitik': {
@@ -3225,7 +3225,7 @@ reply('*Success in turning off antirude in this group happy now*')
  { buttonId: `${command} on`, buttonText: { displayText: 'ON' }, type: 1 },
  { buttonId: `${command} off`, buttonText: { displayText: 'OFF' }, type: 1 }
  ]
- await ZimBotInc.sendButtonText(m.chat, buttons, `*▊▊▊ANTI BADWORDS▊▊▊*\n\n.`, `${global.botname}`, m)
+ await ZimBotInc.sendButtonText(m.chat, buttons, `*▊▊▊ANTI BADWORDS▊▊▊*\n\n.`, `Mascota de Allen - Laurita`, m)
  }
  }
  
@@ -3261,7 +3261,7 @@ let button = [
 { buttonId: `${command} on`, buttonText: { displayText: 'ON' }, type: 1 },
 { buttonId: `${command} off`, buttonText: { displayText: 'OFF' }, type: 1 }
 ]
-await ZimBotInc.sendButtonText(m.chat, button, `*▊▊▊Modo sexo▊▊▊*\n\n*prendelo para que la gente empiece a manosearse xd*`, `${global.botname}`, m)
+await ZimBotInc.sendButtonText(m.chat, button, `*▊▊▊Modo sexo▊▊▊*\n\n*prendelo para que la gente empiece a manosearse xd*`, `global.botname`, m)
 }
 }
 break
@@ -3305,16 +3305,7 @@ if (!regex1.test(args[0])) throw 'link!'
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
     // 'attachment; filenameq=ZidniGanz.zip'
     reply(`*Please wait, sending repository..*`)
-    ZimBotInc.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' , quoted: m,contextInfo: { externalAdReply:{
-      title:"ZIM BOT V4",
-      body:"SUB DRIPS OFC",
-      showAdAttribution: true,
-      mediaType:2,
-      thumbnail: fs.readFileSync('./drips.jpg'),
-      mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-      sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
-      }}
-      })
+    ZimBotInc.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' , quoted: m})
  
  break
  case 'tagme': {
@@ -3785,7 +3776,7 @@ replay(mess.wait)
  
  `*PHOTO URL:* `+dripdako,
 
- footer: `${global.botname}`,
+ footer: `Mascota de Allen - Laurita`,
  buttons: buttons,
  headerType: 4,
  contextInfo:{externalAdReply:{
@@ -3894,8 +3885,8 @@ var garo = [
 ]
 let tunhamasawi = {
 image: {url:stantontunha.data.url},
-caption:  `Here you go!`,
-footer: `${global.botname}`,
+caption:  `Aquí tienes Wap@`,
+footer: `Mascota de Allen - Laurita`,
 buttons: garo,
 headerType: 4
 }
@@ -3912,8 +3903,8 @@ var tunhabee = [
 ]
 let masawitunha = {
 image: {url:lioneltunha.data.url},
-caption:  `DATA OBTAINED!`,
-footer: `${global.botname}`,
+caption:  `Datos obtenidos kjskjks`,
+footer: `Mascota de Allen - Laurita`,
 buttons: tunhabee,
 headerType: 4
 }
@@ -3929,8 +3920,8 @@ var tunhaprince = [
 ]
 let tanaka = {
 image: {url:princetunha.data.url},
-caption:  `Here you go!`,
-footer: `${global.botname}`,
+caption:  `Aquí tenés!`,
+footer: `Mascota de Allen - Laurita`,
 buttons: tunhaprince,
 headerType: 4
 }
@@ -3946,8 +3937,8 @@ var madeline = [
 ]
 let magwetta = {
 image: {url:tunha.data.url},
-caption:  `Here you go!`,
-footer: `${global.botname}`,
+caption:  `Toma toma xd`,
+footer: `Mascota de Allen - Laurita`,
 buttons: madeline,
 headerType: 4
 }
@@ -3963,8 +3954,8 @@ var blessedtuna2 = [
 ]
 let sekedema = {
 image: {url:tunha.data.url},
-caption:  `Here you go!`,
-footer: `${global.botname}`,
+caption:  `Ten ♥`,
+footer: `Mascota de Allen - Laurita`,
 buttons: blessedtuna2,
 headerType: 4
 }
@@ -4281,17 +4272,10 @@ let caption = `
     ⟮ _*◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵\n\n*◉TITLE :* ${media.title}\n*◉FILESIZE :* ${media.filesizeF}\n*◉URL :* ${isUrl(text)}\n*◉EXT :* MP3\n*◉RESOLUTION :* ${args[1] || '128kbps'}\n\n*ZIM BOT INC*`
+      🔂   ⏪   ⏸️     ⏩  🎵\n\n*◉Titulo :* ${media.title}\n*◉Peso :* ${media.filesizeF}\n*◉URL :* ${isUrl(text)}\n*◉EXT :* MP3\n*◉RESOLUCION :* ${args[1] || '128kbps'}\n\n*Mascota de Allen UwU*`
 buf = await getBuffer(media.thumb)
-ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))   
-ZimBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
-title:"ZIM BOT V4",
-body:"SUB DRIPS OFC",
-showAdAttribution: true,
-mediaType:2,
-thumbnail: fs.readFileSync(`./drips.jpg`) ,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*El link que enviaste no es valido*'))   
+ZimBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m}, {quoted: m})
 }
 break
 case 'audio': {    
@@ -4306,17 +4290,10 @@ let caption = `
     ⟮ _*◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵*\n\n*◉TITLE :* ${media.title}\n*◉FILESIZE :* ${media.filesizeF}\n*◉URL :* ${isUrl(text)}\n*◉EXT :* MP3\n*◉RESOLUTION :* ${args[1] || '128kbps'}\n\n*ZIM BOT INC*`
+      🔂   ⏪   ⏸️     ⏩  🎵*\n\n*◉Titulo :* ${media.title}\n*◉Peso :* ${media.filesizeF}\n*◉URL :* ${isUrl(text)}\n*◉EXT :* MP3\n*◉RESOLUCION :* ${args[1] || '128kbps'}\n\n*ZIM BOT INC*`
 buf = await getBuffer(media.thumb)
 ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))   
-ZimBotInc.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
-title:"ZIM BOT V4",
-body:"DRIPS",
-showAdAttribution: true,
-mediaType:2,
-thumbnail: fs.readFileSync(`./drips.jpg`) ,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+ZimBotInc.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m}, {quoted: m})
 }
 break
 case 'ytmp4': case 'ytvideo': {
@@ -4331,7 +4308,7 @@ var capti = `
     ⟮ _*◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵\n\n*◉Title* : ${media.title}\n*◉FILESIZE* : ${media.filesizeF}\n*◉URL* : ${isUrl(text)}\n*◉EXT* : MP3\n*◉RESOLUTION* : ${args[1] || '360p'}\n\n*ZIM BOT INC*`
+      🔂   ⏪   ⏸️     ⏩  🎵\n\n*◉Titulo* : ${media.title}\n*◉Peso* : ${media.filesizeF}\n*◉URL* : ${isUrl(text)}\n*◉EXT* : MP3\n*◉RESOLUTION* : ${args[1] || '360p'}\n\n*ZIM BOT INC*`
 var buf = await getBuffer(media.thumb)
 ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${capti}` }, { quoted: m })
 ZimBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*Downloading From ${text}*` ,  quoted: m}, {quoted: m})
@@ -4339,7 +4316,7 @@ ZimBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf
 break
 case 'ytshorts': case 'shorts': {
 if (!text) return reply(`*Use ${prefix + command} enter pin link*`)
-if (!isUrl(args[0]) && !args[0].includes('youtube')) throw '*The link you provided is not valid*'  
+if (!isUrl(args[0]) && !args[0].includes('youtube')) throw '*El link que compartiste no es válido*'  
 xa.Youtube(`${text}`).then(async (data) => {
 if (data.medias[0].formattedSize.split('MB')[0] >= 100) return m.reply('*File Over Limit* '+util.format(data)) 
 cap = `
@@ -4550,7 +4527,7 @@ case 'fbdl': case 'fb': case 'facebook': case 'fbvideo': {
 
          txt += `*◉URL :* ${text}\n\n`
 
-         txt += `*ZIM BOT INC*`                
+         txt += `*Mascota de Allen uwu*`                
 
      buf = await getBuffer(data.thumbnail)    
 
@@ -4717,8 +4694,8 @@ hydratedContentText: listmn,
 hydratedFooterText: `${botname}`,
 hydratedButtons: [{
 urlButton: {
-displayText: 'SUBSCRIBE',
-url: 'https://www.youtube.com/c/DRIPSOFC'
+displayText: 'Grupo Cp',
+url: 'https://youtu.be/dQw4w9WgXcQ'
 }
 }, {
 urlButton: {
@@ -5684,7 +5661,7 @@ if (/glue/.test(command)) link = 'https://textpro.me/create-3d-glue-text-effect-
 if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
 if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
 let anu = await maker.textpro(link, q)
-ZimBotInc.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}` ,  quoted: m}, {quoted: m})
+ZimBotInc.sendMessage(m.chat, { image: { url: anu }, caption: `con amor de ${global.botname}` ,  quoted: m}, {quoted: m})
 }
 //----END HERE--------\\
 
