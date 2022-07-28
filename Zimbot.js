@@ -662,8 +662,8 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             hydratedFooterText: `ʀᴘɢ ɢᴀᴍᴇ ʙʏ ᴢɪᴍʙᴏᴛ`,
             hydratedButtons:  [{        
                 "urlButton": {
-                  "displayText": "SUBSCRIBE",
-                  "url": "https://www.youtube.com/c/DRIPSOFC"
+                  "displayText": "Apoya YT xd",
+                  "url": "https://www.youtube.com/channel/UCp7bIVbIgIgJBai1DvBxpTg"
                 }
             }, {
             quickReplyButton: {
@@ -711,12 +711,12 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             hydratedFooterText: `ʀᴘɢ ɢᴀᴍᴇ ʙʏ ᴢɪᴍʙᴏᴛ`,
             hydratedButtons:  [{        
                 "urlButton": {
-                  "displayText": "SUBSCRIBE",
-                  "url": "https://www.youtube.com/c/DRIPSOFC"
+                  "displayText": "Apoya YT xd",
+                  "url": "https://www.youtube.com/channel/UCp7bIVbIgIgJBai1DvBxpTg"
                 }
             }, {
             quickReplyButton: {
-                displayText: 'INVENTORY',
+                displayText: 'Inventario',
                 id: `${prefix}inventori`
             }},{
               quickReplyButton: {
@@ -761,12 +761,12 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
               mentions: [sender],
               hydratedButtons: [{        
               "urlButton": {
-              "displayText": "SUBSCRIBE",
-              "url": "https://www.youtube.com/c/DRIPSOFC"
+              "displayText": "Apoya YT xd",
+              "url": "https://www.youtube.com/channel/UCp7bIVbIgIgJBai1DvBxpTg"
               }
             }, {
               quickReplyButton: {
-                  displayText: 'INVENTORY',
+                  displayText: 'INVENTARIO',
                   id: `${prefix}inventori`
               }},{
                 quickReplyButton: {
@@ -812,12 +812,12 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
               mentions: [sender],
               hydratedButtons: [{        
               "urlButton": {
-              "displayText": "SUBSCRIBE",
-              "url": "https://www.youtube.com/c/DRIPSOFC"
+              "displayText": "Apoya YT xd",
+              "url": "https://www.youtube.com/channel/UCp7bIVbIgIgJBai1DvBxpTg"
               }
             }, {
               quickReplyButton: {
-                  displayText: 'INVENTORY',
+                  displayText: 'INVENTARIO',
                   id: `${prefix}inventori`
               }},{
                 quickReplyButton: {
@@ -858,12 +858,12 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             hydratedFooterText: `ʀᴘɢ ɢᴀᴍᴇ ʙʏ ᴢɪᴍʙᴏᴛ`,
             hydratedButtons:  [{        
                 "urlButton": {
-                  "displayText": "SUBSCRIBE",
-                  "url": "https://www.youtube.com/c/DRIPSOFC"
+                  "displayText": "Apoya YT xd",
+                  "url": "https://www.youtube.com/channel/UCp7bIVbIgIgJBai1DvBxpTg"
                 }
             }, {
             quickReplyButton: {
-                displayText: 'INVENTORY',
+                displayText: 'INVENTARIO',
                 id: `${prefix}inventori`
             }},{
               quickReplyButton: {
@@ -889,7 +889,7 @@ ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             ZimBotInc.sendMessage(from, buttonMessage, {quoted:m})
             })
             } catch (e) {
-            reply("Emoji error, please enter another emojinNOTE : Just enter 1 emoji")
+            reply("Error de emoji, por favor ingresa otronNOTE : Just enter 1 emoji")
             }
             }
 //----ANTILINK AND CHATBOT-----\\
@@ -938,7 +938,7 @@ if(isSticker === "stickerMessage"){
 if (!m.key.fromMe) {
 if (isAdmins) return reply(`*you are admin lucky you dont send stickers here*`)
 if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰𝘳𝘳𝘺 𝘺𝘶 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘰𝘸𝘯𝘦𝘳 𝘭𝘶𝘤𝘬𝘺 𝘺𝘰𝘶*`)
-reply('*ANTI STICKER*\n\n*NO STICKERS  ALLOWED HERE OKAY GOODBYE*')
+reply('*ANTI STICKER*\n\n*DIJE QUE NO QUERÍA NADA DE STICKERS, ADIÓS*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no stickers here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
@@ -952,7 +952,7 @@ if(isAudio === "audioMessage"){
 if (!m.key.fromMe) {
 if (isAdmins) return reply(`*you are admin lucky you dont send voice note here*`)
 if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰𝘳𝘳𝘺 𝘺𝘶 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘰𝘸𝘯𝘦𝘳 𝘭𝘶𝘤𝘬𝘺 𝘺𝘰𝘶*`)
-reply('*ANTI VOICE NOTE*\n\n*NO VOICE ALLOWED HERE  OKAY GOODBYE*')
+reply('*ANTI VOICE NOTE*\n\n*CLARAMENTE MENCIONÉ QUE NO TENÍA HUMOR DE AUDIOS :)*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no voice note here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
@@ -966,7 +966,7 @@ if(isVideo === "videoMessage"){
 if (!m.key.fromMe) {
 if (isAdmins) return reply(`*you are admin lucky you dont send videos here*`)
 if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰𝘳𝘳𝘺 𝘺𝘶 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘰𝘸𝘯𝘦𝘳 𝘭𝘶𝘤𝘬𝘺 𝘺𝘰𝘶*`)
-reply('*ANTI VIDEO*\n\n*NO VIDEOS ALLOWED HERE  OKAY GOODBYE*')
+reply('*ANTI VIDEO*\n\n*DIJE, NADA, DE VI DE OS, CHAO*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no videos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
@@ -980,7 +980,7 @@ if(isPhoto === "imageMessage"){
 if (!m.key.fromMe) {
 if (isAdmins) return reply(`*you are admin lucky you dont send photos here*`)
 if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰𝘳𝘳𝘺 𝘺𝘶 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘰𝘸𝘯𝘦𝘳 𝘭𝘶𝘤𝘬𝘺 𝘺𝘰𝘶*`)
-reply('*ANTI PHOTOS*\n\n*NO PHOTOS ALLOWED HERE  OKAY GOODBYE*')
+reply('*ANTI PHOTOS*\n\n*ANDO MAL COMO PARA PONERME A VER TUS COSAS*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no photos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
@@ -1097,7 +1097,7 @@ if (!m.isGroup) return
 if (!isAntiVirtex) return
 if (groupAdmins) return
 reply('Mark as read\n'.repeat(300))
-reply(`*▊▊▊DETECTED▊▊▊*\n\n*You sent a virtex, sorry you will be kicked from the group*`)
+reply(`*▊▊▊DETECTED▊▊▊*\n\n*O sea, tu eres chevere con tus virusitos, ¿por qué no se los mandas a tu madre? :3*`)
 console.log(('[KICK]', 'red'), color('Received a text virus!', 'yellow'))
 ZimBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 }  
@@ -1112,13 +1112,13 @@ if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no links okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *Dije, nada de links ¿si? chau n.n*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
 if (db.settings[botNumber].autoblock) {
 if (m.chat.endsWith("@s.whatsapp.net")) {
-if (isCreator) reply('*you are bot creator okay*')
+if (isCreator) reply('*Si amo uwu*')
 block = m.sender
 await ZimBotInc.sendMessage(from, {text:`*▊▊▊AUTO BLOCK▊▊▊*\n\n@${block.split("@")[0]} *today I'm blocking dumps bye you are _blocked_* *if you want to use bot join this group* ${global.group1}\n\n${global.group2}`, m})
 ZimBotInc.updateBlockStatus(m.sender,'block')
@@ -1127,7 +1127,7 @@ ZimBotInc.updateBlockStatus(m.sender,'block')
 
 if (db.chats[m.chat].antilinkyt) {
 if (budy.includes(`https://nando.com`)) {
-if (!isBotAdmins) return reply('*BOT MUST BE ADMIN OKAY*')
+if (!isBotAdmins) return reply('*No tengo admin XD*')
 reply(`*▊▊▊ ANTIYT ▊▊▊*\n\n*SOrry ${botname} will kick you out because what you sent is a youtube link in this group*`)
 if (isAdmins) return reply(`*Ehh sorry you admin*`)
  if (isCreator) return reply(`*whoa you are  bot creator i wont kick you okay*`)
@@ -1140,7 +1140,7 @@ ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊ ANTILINK ▊▊▊*\n\n@${kice.s
 
 if (db.chats[m.chat].antibule)  {
 if (m.sender.includes(`+212`)) {
-if (!isBotAdmins) return reply('*BOT MUST BE ADMIN OKAY*')
+if (!isBotAdmins) return reply('*No tengo admin XD*')
 reply(`*▊▊▊ ANTIBULE ▊▊▊*\n\n*Sorry ${botname} will kick you out because you are a stranger in this group*`)
 if (isAdmins) return reply(`*Ehh sorry you admin*`)
 if (isCreator) return reply(`*whoa you are  bot creator i wont kick you okay*`)
@@ -1237,7 +1237,7 @@ if (('family100'+m.chat in _family100) && isCmd) {
  }
  let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
  let caption = `
-Answer the following questions :\n${room.soal}\n\n\nThere is ${room.jawaban.length} Answer ${room.jawaban.find(v => v.includes(' ')) ? `(some answers have spaces)` : ''}
+Responde las siguientes preguntas :\n${room.soal}\n\n\nHay un ${room.jawaban.length} Answer ${room.jawaban.find(v => v.includes(' ')) ? `(some answers have spaces)` : ''}
 ${isWin ? `All Answers Answered` : isSurender ? 'Give up!' : ''}
 ${Array.from(room.jawaban, (jawaban, index) => {
 return isSurender || room.terjawab[index] ? `(${index + 1}) ${jawaban} ${room.terjawab[index] ? '@' + room.terjawab[index].split('@')[0] : ''}`.trim() : false
@@ -1251,9 +1251,9 @@ if (tebaklagu.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
  kuis = true
  jawaban = tebaklagu[m.sender.split('@')[0]]
  if (budy.toLowerCase() == jawaban) {
-   await ZimBotInc.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'GUESS THE MUSIC' }, type: 1 }], ` Guess The Song\n\nCorrect Answer 🎉\n\nWant to play again? ZIM BOT INC`, ZimBotInc.user.name, m)
+   await ZimBotInc.sendButtonText(m.chat, [{ buttonId: 'adivina la canción', buttonText: { displayText: 'ADIVINA LA CANCIÓN' }, type: 1 }], ` Guess The Song\n\nRespuesta correcta 🎉\n\nQuieres jugar otra vez? Adaptado por Allen`, ZimBotInc.user.name, m)
    delete tebaklagu[m.sender.split('@')[0]]
- } else reply('*WRONG ANSWER!*')
+ } else reply('*Respuesta incorrecta!*')
 }
 
 if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
