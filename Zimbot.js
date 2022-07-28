@@ -172,10 +172,10 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 
 
 const reply = (teks) => {
-    ZimBotInc.sendMessage(m.chat)
+    ZimBotInc.sendMessage(m.chat, {text: teks, mentions:[m.sender]}, {quoted:m})
 }
 const replay = (teks) => {
-    ZimBotInc.sendMessage(m.chat)
+    ZimBotInc.sendMessage(m.chat, {text: teks, mentions:[m.sender]}, {quoted:m})
 }
 
 const drip =  {
