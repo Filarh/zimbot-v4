@@ -172,10 +172,10 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 
 
 const reply = (teks) => {
-    ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "Laurita",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, detectLinks: true,body: "Mascota de Allen"}}})
+    ZimBotInc.sendMessage(m.chat)
 }
 const replay = (teks) => {
-    ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "Laurita",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, body: "Mascota de Allen"}}})
+    ZimBotInc.sendMessage(m.chat)
 }
 
 const drip =  {
